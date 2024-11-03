@@ -1,0 +1,302 @@
+/* Author: Malik
+Theme: Restaurant */
+/* general styling */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+h2 {
+    color: #37474F;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-white {
+    color: #fff;
+}
+
+a {
+    color: #F06292;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #b90943;
+    cursor: pointer;
+}
+
+.clear-fix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #F48FB1;
+    padding: 1% 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 100%;
+    max-width: 100px;
+    float: left;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.menu ul li a {
+    color: #333;
+    transition: color   0.3s background-color 0.3s;
+
+}
+.menu ul li a:hover{
+    color: white;
+    
+    
+}
+
+
+/* Food Search */
+.food-search {
+    background-image: url(/images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 6% 0;
+}
+
+.food-search form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.food-search input[type="search"] {
+    width: 50%;
+    padding: 1%;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: none;
+}
+
+.Btn {
+    padding: 1.5%;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: #F06292;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.Btn:hover {
+    background-color: #b90943;
+    color: white;
+}
+
+/* Categories */
+.categories {
+    padding: 4% 0;
+}
+
+.box3 {
+    width: 20%;
+    float: left;
+    margin: 2.5%;
+    position: relative;
+}
+
+.box3 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.box3 .float-text {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Food Menu */
+.food-menu {
+    background-color: #ececec;
+    padding: 4% 0;
+}
+
+.food-menu .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+
+.food-menu-item {
+    background-color: #f7ecec;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 2%;
+    width: 30%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.food-menu-img img {
+    width: 80px;
+    border-radius: 15px;
+}
+
+.food-menu-description h4 {
+    margin: 0;
+}
+
+.food-price {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 5px 0;
+}
+
+.food-detail {
+    font-size: 0.9rem;
+    color: #8f9ead;
+}
+
+/* Social Media */
+.socials {
+    padding: 2% 0;
+    background-color: #333;
+}
+
+.socials ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.socials ul li a {
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #222;
+    color: #aaa;
+    padding: 1% 0;
+    text-align: center;
+}
+
+.footer a {
+    color: #F06292;
+}
+
+.footer a:hover {
+    color: #b90943;
+}
+
+
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .logo {
+        float: none;
+        margin-bottom: 15px;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu ul li {
+        margin: 10px 0;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 5%;
+    }
+
+    .box3 {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .food-search input[type="search"] {
+        width: 80%;
+    }
+
+    .food-menu-item {
+        width: 100%;
+    }
+
+    .socials ul {
+        gap: 10px;
+    }
+
+    .socials ul li a {
+        font-size: 0.9rem;
+    }
+}
+
